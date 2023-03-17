@@ -8,4 +8,5 @@ temperature = st.number_input('Input Temperature')
 temperature = np.array([temperature]).reshape(-1,1)
 ans = model.predict(temperature)[0]
 if st.button('Predict'):
+  st.write("Revenue Prediction")
   st.write(ans)
