@@ -9,4 +9,4 @@ temperature = st.number_input('Input Temperature')
 
 if st.button('Predict'):
   st.write("Revenue Prediction")
-  st.write(model.predict(temperature))
+  st.write(model.predict([temperature]))
